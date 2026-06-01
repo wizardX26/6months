@@ -16,6 +16,16 @@
 		D033FF9E2FCDCD34002A3028 /* ChipPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033FF9C2FCDCD34002A3028 /* ChipPageTests.swift */; };
 		D033FFA22FCDCD44002A3028 /* ChipPageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033FFA02FCDCD44002A3028 /* ChipPageUITestsLaunchTests.swift */; };
 		D033FFA32FCDCD44002A3028 /* ChipPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033FF9F2FCDCD44002A3028 /* ChipPageUITests.swift */; };
+		D033FFA52FCDDB74002A3028 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033FFA42FCDDB74002A3028 /* CategoryViewController.swift */; };
+		D033FFA82FCDDBEF002A3028 /* FollowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033FFA72FCDDBEF002A3028 /* FollowerViewController.swift */; };
+		D033FFAA2FCDDBF6002A3028 /* FollowerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D033FFA92FCDDBF6002A3028 /* FollowerViewController.storyboard */; };
+		D033FFAD2FCDDC04002A3028 /* FollowingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D033FFAC2FCDDC04002A3028 /* FollowingViewController.storyboard */; };
+		D033FFB12FCDDC15002A3028 /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033FFB02FCDDC15002A3028 /* FollowingViewController.swift */; };
+		D033FFB32FCDDCE9002A3028 /* CategoryViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033FFB22FCDDCE9002A3028 /* CategoryViewController+Extensions.swift */; };
+		D033FFB72FCDE48E002A3028 /* ChipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033FFB62FCDE48E002A3028 /* ChipCollectionViewCell.swift */; };
+		D033FFB92FCDE5E7002A3028 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D033FFB82FCDE5E7002A3028 /* data.json */; };
+		D033FFBD2FCDE741002A3028 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033FFBC2FCDE741002A3028 /* Bundle+Extension.swift */; };
+		D033FFBF2FCDE781002A3028 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033FFBE2FCDE781002A3028 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		D033FF9C2FCDCD34002A3028 /* ChipPageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipPageTests.swift; sourceTree = "<group>"; };
 		D033FF9F2FCDCD44002A3028 /* ChipPageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipPageUITests.swift; sourceTree = "<group>"; };
 		D033FFA02FCDCD44002A3028 /* ChipPageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipPageUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D033FFA42FCDDB74002A3028 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		D033FFA72FCDDBEF002A3028 /* FollowerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerViewController.swift; sourceTree = "<group>"; };
+		D033FFA92FCDDBF6002A3028 /* FollowerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FollowerViewController.storyboard; sourceTree = "<group>"; };
+		D033FFAC2FCDDC04002A3028 /* FollowingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FollowingViewController.storyboard; sourceTree = "<group>"; };
+		D033FFB02FCDDC15002A3028 /* FollowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
+		D033FFB22FCDDCE9002A3028 /* CategoryViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryViewController+Extensions.swift"; sourceTree = "<group>"; };
+		D033FFB62FCDE48E002A3028 /* ChipCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipCollectionViewCell.swift; sourceTree = "<group>"; };
+		D033FFB82FCDE5E7002A3028 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		D033FFBC2FCDE741002A3028 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		D033FFBE2FCDE781002A3028 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +121,16 @@
 			children = (
 				D033FF8B2FCDCD28002A3028 /* AppDelegate.swift */,
 				D033FF922FCDCD28002A3028 /* SceneDelegate.swift */,
+				D033FFB52FCDE458002A3028 /* CategoryViewController */,
 				D033FF932FCDCD28002A3028 /* ViewController.swift */,
+				D033FFBC2FCDE741002A3028 /* Bundle+Extension.swift */,
+				D033FFAB2FCDDBF9002A3028 /* FollowingViewController */,
+				D033FFA62FCDDBD2002A3028 /* FollowerViewController */,
 				D033FF912FCDCD28002A3028 /* Main.storyboard */,
 				D033FF8F2FCDCD28002A3028 /* LaunchScreen.storyboard */,
 				D033FF8C2FCDCD28002A3028 /* Assets.xcassets */,
 				D033FF8D2FCDCD28002A3028 /* Info.plist */,
+				D033FFB82FCDE5E7002A3028 /* data.json */,
 			);
 			path = ChipPage;
 			sourceTree = "<group>";
@@ -126,6 +151,43 @@
 			);
 			path = ChipPageUITests;
 			sourceTree = SOURCE_ROOT;
+		};
+		D033FFA62FCDDBD2002A3028 /* FollowerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D033FFA72FCDDBEF002A3028 /* FollowerViewController.swift */,
+				D033FFA92FCDDBF6002A3028 /* FollowerViewController.storyboard */,
+			);
+			path = FollowerViewController;
+			sourceTree = "<group>";
+		};
+		D033FFAB2FCDDBF9002A3028 /* FollowingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D033FFAC2FCDDC04002A3028 /* FollowingViewController.storyboard */,
+				D033FFB02FCDDC15002A3028 /* FollowingViewController.swift */,
+			);
+			path = FollowingViewController;
+			sourceTree = "<group>";
+		};
+		D033FFB42FCDE44D002A3028 /* ChipView */ = {
+			isa = PBXGroup;
+			children = (
+				D033FFB62FCDE48E002A3028 /* ChipCollectionViewCell.swift */,
+			);
+			path = ChipView;
+			sourceTree = "<group>";
+		};
+		D033FFB52FCDE458002A3028 /* CategoryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D033FFB42FCDE44D002A3028 /* ChipView */,
+				D033FFA42FCDDB74002A3028 /* CategoryViewController.swift */,
+				D033FFB22FCDDCE9002A3028 /* CategoryViewController+Extensions.swift */,
+				D033FFBE2FCDE781002A3028 /* Model.swift */,
+			);
+			path = CategoryViewController;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -238,9 +300,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D033FFB92FCDE5E7002A3028 /* data.json in Resources */,
 				D033FF952FCDCD28002A3028 /* LaunchScreen.storyboard in Resources */,
 				D033FF972FCDCD28002A3028 /* Assets.xcassets in Resources */,
 				D033FF982FCDCD28002A3028 /* Main.storyboard in Resources */,
+				D033FFAD2FCDDC04002A3028 /* FollowingViewController.storyboard in Resources */,
+				D033FFAA2FCDDBF6002A3028 /* FollowerViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,8 +330,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D033FFA52FCDDB74002A3028 /* CategoryViewController.swift in Sources */,
+				D033FFBD2FCDE741002A3028 /* Bundle+Extension.swift in Sources */,
 				D033FF992FCDCD28002A3028 /* AppDelegate.swift in Sources */,
+				D033FFB72FCDE48E002A3028 /* ChipCollectionViewCell.swift in Sources */,
 				D033FF9A2FCDCD28002A3028 /* ViewController.swift in Sources */,
+				D033FFBF2FCDE781002A3028 /* Model.swift in Sources */,
+				D033FFA82FCDDBEF002A3028 /* FollowerViewController.swift in Sources */,
+				D033FFB12FCDDC15002A3028 /* FollowingViewController.swift in Sources */,
+				D033FFB32FCDDCE9002A3028 /* CategoryViewController+Extensions.swift in Sources */,
 				D033FF9B2FCDCD28002A3028 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
