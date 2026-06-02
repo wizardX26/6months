@@ -40,10 +40,21 @@
                                                 <segue destination="8K5-FM-qoo" kind="show" id="qwu-k8-fa3"/>
                                             </connections>
                                         </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnG-aY-cCG">
+                                            <rect key="frame" x="16" y="457" width="361" height="39"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                            <connections>
+                                                <segue destination="FaR-2W-lrR" kind="presentation" id="SS0-nt-0gJ"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="wPs-ZV-iRU" firstAttribute="centerY" secondItem="RbD-aV-XM8" secondAttribute="centerY" id="0vv-rc-Gnk"/>
+                                        <constraint firstItem="XnG-aY-cCG" firstAttribute="centerX" secondItem="RbD-aV-XM8" secondAttribute="centerX" id="Bty-MZ-UKT"/>
+                                        <constraint firstAttribute="bottom" secondItem="XnG-aY-cCG" secondAttribute="bottom" constant="184" id="Nvp-Do-GYu"/>
                                         <constraint firstItem="wPs-ZV-iRU" firstAttribute="centerX" secondItem="RbD-aV-XM8" secondAttribute="centerX" id="OCB-Xa-PZA"/>
+                                        <constraint firstItem="XnG-aY-cCG" firstAttribute="leading" secondItem="RbD-aV-XM8" secondAttribute="leading" constant="16" id="QiP-Or-395"/>
                                     </constraints>
                                 </view>
                                 <blurEffect style="systemUltraThinMaterial"/>
@@ -67,6 +78,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1064.885496183206" y="130.98591549295776"/>
+        </scene>
+        <!--Onboard View Controller-->
+        <scene sceneID="83Q-4T-MFl">
+            <objects>
+                <viewController id="FaR-2W-lrR" customClass="OnboardViewController" customModule="ChipPage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VMx-BA-ord">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dab-sX-Pdh">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                                <color key="backgroundColor" systemColor="systemWhiteColor"/>
+                                <connections>
+                                    <segue destination="eem-80-yZv" kind="embed" identifier="embedOnboardPageViewController" id="zhk-vO-fAj"/>
+                                </connections>
+                            </containerView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="7zk-h6-L1n">
+                                <rect key="frame" x="160" y="633.33333333333337" width="73" height="26"/>
+                                <color key="pageIndicatorTintColor" systemColor="systemGray2Color"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBg-6P-ijw">
+                                <rect key="frame" x="24" y="703.33333333333337" width="345" height="39"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="didTapBottomPopButton:" destination="FaR-2W-lrR" eventType="touchUpInside" id="krP-Wx-7Ig"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chi-Qe-xI9">
+                                <rect key="frame" x="31" y="23" width="47" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                                <connections>
+                                    <action selector="didTapTopPopButton:" destination="FaR-2W-lrR" eventType="touchUpInside" id="iax-2k-4JY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hM5-7P-QZt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dab-sX-Pdh" firstAttribute="baseline" secondItem="TBg-6P-ijw" secondAttribute="firstBaseline" constant="64" id="G9o-KX-1xo"/>
+                            <constraint firstItem="TBg-6P-ijw" firstAttribute="leading" secondItem="VMx-BA-ord" secondAttribute="leading" constant="24" id="NS9-nW-SFp"/>
+                            <constraint firstItem="Dab-sX-Pdh" firstAttribute="top" secondItem="VMx-BA-ord" secondAttribute="top" id="Pwy-Jx-Iw0"/>
+                            <constraint firstItem="Dab-sX-Pdh" firstAttribute="bottom" secondItem="VMx-BA-ord" secondAttribute="bottom" id="TCL-YR-hp7"/>
+                            <constraint firstItem="Dab-sX-Pdh" firstAttribute="trailing" secondItem="hM5-7P-QZt" secondAttribute="trailing" id="iwq-eK-TFp"/>
+                            <constraint firstItem="TBg-6P-ijw" firstAttribute="centerX" secondItem="7zk-h6-L1n" secondAttribute="centerX" id="mre-aY-KGU"/>
+                            <constraint firstItem="TBg-6P-ijw" firstAttribute="centerX" secondItem="Dab-sX-Pdh" secondAttribute="centerX" id="rPp-Uj-Hbq"/>
+                            <constraint firstItem="Dab-sX-Pdh" firstAttribute="leading" secondItem="hM5-7P-QZt" secondAttribute="leading" id="w0y-Qc-UnQ"/>
+                            <constraint firstItem="TBg-6P-ijw" firstAttribute="top" secondItem="7zk-h6-L1n" secondAttribute="bottom" constant="44" id="wEW-bZ-Vnq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerVIew" destination="Dab-sX-Pdh" id="pTy-Ic-UFu"/>
+                        <outlet property="pageControl" destination="7zk-h6-L1n" id="mZX-lf-3Y6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQ9-Lt-btS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064.885496183206" y="871.83098591549299"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="bFB-H6-G8j">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="eem-80-yZv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WXA-Wc-mj7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2268" y="872"/>
         </scene>
         <!--Category-->
         <scene sceneID="Hmw-om-COd">
@@ -174,14 +255,21 @@
         </scene>
     </scenes>
     <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemWhiteColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

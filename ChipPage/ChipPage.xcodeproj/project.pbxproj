@@ -26,6 +26,11 @@
 		D033FFB92FCDE5E7002A3028 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D033FFB82FCDE5E7002A3028 /* data.json */; };
 		D033FFBD2FCDE741002A3028 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033FFBC2FCDE741002A3028 /* Bundle+Extension.swift */; };
 		D033FFBF2FCDE781002A3028 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033FFBE2FCDE781002A3028 /* Model.swift */; };
+		D033FFC52FCF432A002A3028 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033FFC42FCF432A002A3028 /* IntroViewController.swift */; };
+		D033FFC72FCF4331002A3028 /* IntroViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D033FFC62FCF4331002A3028 /* IntroViewController.storyboard */; };
+		D033FFC92FCF4387002A3028 /* CampingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033FFC82FCF4387002A3028 /* CampingViewController.swift */; };
+		D033FFCB2FCF4391002A3028 /* CampingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D033FFCA2FCF4391002A3028 /* CampingViewController.storyboard */; };
+		D033FFCF2FCF47E8002A3028 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033FFCE2FCF47E8002A3028 /* OnboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +74,11 @@
 		D033FFB82FCDE5E7002A3028 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		D033FFBC2FCDE741002A3028 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		D033FFBE2FCDE781002A3028 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D033FFC42FCF432A002A3028 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		D033FFC62FCF4331002A3028 /* IntroViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IntroViewController.storyboard; sourceTree = "<group>"; };
+		D033FFC82FCF4387002A3028 /* CampingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampingViewController.swift; sourceTree = "<group>"; };
+		D033FFCA2FCF4391002A3028 /* CampingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CampingViewController.storyboard; sourceTree = "<group>"; };
+		D033FFCE2FCF47E8002A3028 /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +133,10 @@
 				D033FF922FCDCD28002A3028 /* SceneDelegate.swift */,
 				D033FFB52FCDE458002A3028 /* CategoryViewController */,
 				D033FF932FCDCD28002A3028 /* ViewController.swift */,
+				D033FFCE2FCF47E8002A3028 /* OnboardViewController.swift */,
 				D033FFBC2FCDE741002A3028 /* Bundle+Extension.swift */,
+				D033FFC22FCF42FB002A3028 /* Onboard_1 */,
+				D033FFC32FCF4309002A3028 /* Onboard_2 */,
 				D033FFAB2FCDDBF9002A3028 /* FollowingViewController */,
 				D033FFA62FCDDBD2002A3028 /* FollowerViewController */,
 				D033FF912FCDCD28002A3028 /* Main.storyboard */,
@@ -187,6 +200,24 @@
 				D033FFBE2FCDE781002A3028 /* Model.swift */,
 			);
 			path = CategoryViewController;
+			sourceTree = "<group>";
+		};
+		D033FFC22FCF42FB002A3028 /* Onboard_1 */ = {
+			isa = PBXGroup;
+			children = (
+				D033FFC42FCF432A002A3028 /* IntroViewController.swift */,
+				D033FFC62FCF4331002A3028 /* IntroViewController.storyboard */,
+			);
+			path = Onboard_1;
+			sourceTree = "<group>";
+		};
+		D033FFC32FCF4309002A3028 /* Onboard_2 */ = {
+			isa = PBXGroup;
+			children = (
+				D033FFC82FCF4387002A3028 /* CampingViewController.swift */,
+				D033FFCA2FCF4391002A3028 /* CampingViewController.storyboard */,
+			);
+			path = Onboard_2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +333,8 @@
 			files = (
 				D033FFB92FCDE5E7002A3028 /* data.json in Resources */,
 				D033FF952FCDCD28002A3028 /* LaunchScreen.storyboard in Resources */,
+				D033FFCB2FCF4391002A3028 /* CampingViewController.storyboard in Resources */,
+				D033FFC72FCF4331002A3028 /* IntroViewController.storyboard in Resources */,
 				D033FF972FCDCD28002A3028 /* Assets.xcassets in Resources */,
 				D033FF982FCDCD28002A3028 /* Main.storyboard in Resources */,
 				D033FFAD2FCDDC04002A3028 /* FollowingViewController.storyboard in Resources */,
@@ -333,8 +366,11 @@
 				D033FFA52FCDDB74002A3028 /* CategoryViewController.swift in Sources */,
 				D033FFBD2FCDE741002A3028 /* Bundle+Extension.swift in Sources */,
 				D033FF992FCDCD28002A3028 /* AppDelegate.swift in Sources */,
+				D033FFC52FCF432A002A3028 /* IntroViewController.swift in Sources */,
 				D033FFB72FCDE48E002A3028 /* ChipCollectionViewCell.swift in Sources */,
 				D033FF9A2FCDCD28002A3028 /* ViewController.swift in Sources */,
+				D033FFC92FCF4387002A3028 /* CampingViewController.swift in Sources */,
+				D033FFCF2FCF47E8002A3028 /* OnboardViewController.swift in Sources */,
 				D033FFBF2FCDE781002A3028 /* Model.swift in Sources */,
 				D033FFA82FCDDBEF002A3028 /* FollowerViewController.swift in Sources */,
 				D033FFB12FCDDC15002A3028 /* FollowingViewController.swift in Sources */,
