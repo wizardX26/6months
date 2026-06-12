@@ -15,6 +15,9 @@
 		C6109E302FDBA5B100CBF56F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6109E282FDBA5B100CBF56F /* ViewController.swift */; };
 		C6109E342FDBB44200CBF56F /* DragImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6109E332FDBB44200CBF56F /* DragImageView.swift */; };
 		C6109E362FDBB44800CBF56F /* DragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6109E352FDBB44800CBF56F /* DragView.swift */; };
+		C6109E382FDBDAD000CBF56F /* TouchWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6109E372FDBDAD000CBF56F /* TouchWindow.swift */; };
+		C6109E3A2FDBDB2B00CBF56F /* LayerTouchOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6109E392FDBDB2A00CBF56F /* LayerTouchOverlayView.swift */; };
+		C6109E3C2FDBDB5E00CBF56F /* TouchOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6109E3B2FDBDB5E00CBF56F /* TouchOverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		C6109E282FDBA5B100CBF56F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C6109E332FDBB44200CBF56F /* DragImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragImageView.swift; sourceTree = "<group>"; };
 		C6109E352FDBB44800CBF56F /* DragView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragView.swift; sourceTree = "<group>"; };
+		C6109E372FDBDAD000CBF56F /* TouchWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchWindow.swift; sourceTree = "<group>"; };
+		C6109E392FDBDB2A00CBF56F /* LayerTouchOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerTouchOverlayView.swift; sourceTree = "<group>"; };
+		C6109E3B2FDBDB5E00CBF56F /* TouchOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchOverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,9 @@
 				C6109E212FDBA5B100CBF56F /* Assets.xcassets */,
 				C6109E222FDBA5B100CBF56F /* Info.plist */,
 				C6109E332FDBB44200CBF56F /* DragImageView.swift */,
+				C6109E372FDBDAD000CBF56F /* TouchWindow.swift */,
+				C6109E392FDBDB2A00CBF56F /* LayerTouchOverlayView.swift */,
+				C6109E3B2FDBDB5E00CBF56F /* TouchOverlayView.swift */,
 				C6109E352FDBB44800CBF56F /* DragView.swift */,
 			);
 			path = "Gesture&Touch";
@@ -148,10 +157,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6109E2E2FDBA5B100CBF56F /* SceneDelegate.swift in Sources */,
+				C6109E3C2FDBDB5E00CBF56F /* TouchOverlayView.swift in Sources */,
 				C6109E2F2FDBA5B100CBF56F /* AppDelegate.swift in Sources */,
 				C6109E342FDBB44200CBF56F /* DragImageView.swift in Sources */,
+				C6109E3A2FDBDB2B00CBF56F /* LayerTouchOverlayView.swift in Sources */,
 				C6109E302FDBA5B100CBF56F /* ViewController.swift in Sources */,
 				C6109E362FDBB44800CBF56F /* DragView.swift in Sources */,
+				C6109E382FDBDAD000CBF56F /* TouchWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
